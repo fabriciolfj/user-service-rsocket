@@ -33,3 +33,16 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+
+tasks.named("bootJar") {
+	launchScript{
+		enabled = true
+	}
+	enabled = true
+	archiveFileName = "bael-6094.${archiveExtension.get()}"
+}
+
+tasks.named("bootBuildImage") {
+	imageName = 'bael-6094:latest'
+}

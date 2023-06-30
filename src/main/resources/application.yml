@@ -1,0 +1,6 @@
+spring:
+  rsocket:
+    server:
+      port: 7073
+  data:
+    mongodb: mongodb://localhost:27017/test
