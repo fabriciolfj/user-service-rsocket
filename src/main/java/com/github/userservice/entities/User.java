@@ -16,4 +16,9 @@ public class User {
     private String id;
     private String name;
     private int balance;
+
+    public User(String name, int balance) {
+        this.name = name;
+        this.balance = balance;
+    }
 }

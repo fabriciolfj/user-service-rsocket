@@ -1,6 +1,8 @@
 spring:
   rsocket:
     server:
-      port: 7073
+      #transport: websocket
+      #mapping-path: /user-service ws://localhost:7072/user-service
+      port: 7071
   data:
     mongodb: mongodb://localhost:27017/test
